@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dd1b1b;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(white, white, white, white, red);
+}
+
+header {
+    background-color: red;
+    color: white;
+    padding: 1px;
+    text-align: center; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    padding-right: 200px; 
+}
+
+.logo {
+    position: absolute;
+    top: 135px; 
+    left: 690px; 
+    width: 220px; 
+    height: auto;  
+    opacity: 95%;
+    
+} 
+.locate {
+    position: absolute;
+    top: 387px; 
+    left:110px; 
+    width:40px; 
+    height: auto;  
+    opacity: 95%;
+    
+} 
+#content {
+    padding: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    flex-basis: calc(33.333% - 20px);
+    background-color: #e4abab ;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-right: 301px;
+    margin-top: 10px;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box ul {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.box ul li {
+    list-style-type: disc;
+}
+
+.locations-title {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+.locations-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.location-box {
+    background-color: #e4abab;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+.location-box:hover {
+    transform: scale(1.1); 
+}
+
+.register-button {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    background-color: #faebeb;
+    color: #dd1b1b;
+    padding: 15px 25px;
+    border: 2px solid #dd1b1b;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.register-button:hover {
+    background-color: white;
+    color: #ff0000;
+    transform: scale(1.1); 
+}
+.botao-dados-doador {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    background-color: #faebeb;
+    color: #dd1b1b;
+    padding: 15px 25px;
+    border: 2px solid #dd1b1b;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding-right: 10px; 
+    }
+    .logo {
+        width: 150px; 
+        left: 10px; 
+        top: 10px; 
+    }
+    .locate {
+        display: none; 
+    }
+    .register-button {
+        position: absolute;
+        top: 10px;
+        left: calc(100% - 80px); 
+        transform: translateX(-100%);
+    }
+}
+

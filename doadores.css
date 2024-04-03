@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(white, white, white, rgb(246, 135, 135), red);
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
